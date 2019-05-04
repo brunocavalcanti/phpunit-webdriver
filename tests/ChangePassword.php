@@ -32,7 +32,7 @@ class ChangePasswordTests extends TestCase {
         $password = $this->driver->findElement(WebDriverBy::cssSelector('input[name="password"]'))->getAttribute('value');
         $passwordSize = strlen($password);
 
-
+#moredata > div.row.center > button
         // Assert
         $this->assertThat(
             $passwordSize,
